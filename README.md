@@ -17,3 +17,8 @@ To install with Composer:
 ```php
 composer require srdev93/sliders-module
 ```
+
+then run:
+```php
+php artisan module:migrate sliders
+```
