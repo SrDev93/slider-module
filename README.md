@@ -1,6 +1,5 @@
 # slider-module
-Slider Module for Laravel Website
-srdev93/sliders-module is a Laravel Module.
+srdev93/sliders-module is a Laravel Module for laravel websites.
 
 # This module is made with the following package:
 ```php
