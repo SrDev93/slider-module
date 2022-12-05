@@ -21,5 +21,4 @@ composer require srdev93/sliders-module
 then run:
 ```php
 php artisan module:migrate sliders
-php artisan module:enable sliders
 ```
