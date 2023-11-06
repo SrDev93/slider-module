@@ -42,7 +42,7 @@
                                     <tr>
                                         <td>{{ $item->title }}</td>
                                         <td>{{ $item->sub_title }}</td>
-                                        <td>@if($item->active) <span class="badge badge-success">فعال</span> @else <span class="badge badge-danger">غیر فعال</span> @endif</td>
+                                        <td>@if($item->active) <span class="badge bg-success">فعال</span> @else <span class="badge bg-danger">غیر فعال</span> @endif</td>
                                         <td>
                                             <a href="{{ route('sliders.edit', $item->id) }}" class="btn btn-primary fs-14 text-white edit-icn" title="ویرایش">
                                                 <i class="fe fe-edit"></i>
