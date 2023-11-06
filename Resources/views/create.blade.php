@@ -46,7 +46,15 @@
                                 <input type="file" name="image" class="form-control" aria-label="تصویر" id="image" accept="image/*">
                                 <div class="invalid-feedback">لطفا یک تصویر انتخاب کنید</div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-12">
+                                <label for="active" class="form-label">وضعیت</label>
+                                <select name="active" class="form-control">
+                                    <option value="1" @if(old('active') == '1') selected @endif>فعال</option>
+                                    <option value="0" @if(old('active') == '0') selected @endif>غیر فعال</option>
+                                </select>
+                                <div class="invalid-feedback">لطفا وضعیت را انتخاب کنید</div>
+                            </div>
+                            <div class="col-12 mt-4">
                                 <button class="btn btn-primary" type="submit">ارسال فرم</button>
                                 @csrf
                             </div>

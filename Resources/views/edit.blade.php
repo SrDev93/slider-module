@@ -57,7 +57,17 @@
                                     <img src="{{ url($slider->image) }}" class="w-100">
                                 @endif
                             </div>
-                            <div class="col-12">
+
+                            <div class="col-md-12">
+                                <label for="active" class="form-label">وضعیت</label>
+                                <select name="active" class="form-control">
+                                    <option value="1" @if($slider->active == '1') selected @endif>فعال</option>
+                                    <option value="0" @if($slider->active == '0') selected @endif>غیر فعال</option>
+                                </select>
+                                <div class="invalid-feedback">لطفا وضعیت را انتخاب کنید</div>
+                            </div>
+
+                            <div class="col-12 mt-4">
                                 <button class="btn btn-primary" type="submit">ارسال فرم</button>
                                 @method('PATCH')
                                 @csrf

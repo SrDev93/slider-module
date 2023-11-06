@@ -33,6 +33,7 @@
                                 <tr>
                                     <th class="wd-15p border-bottom-0">عنوان</th>
                                     <th class="wd-15p border-bottom-0">زیر عنوان</th>
+                                    <th class="wd-15p border-bottom-0">وضعیت</th>
                                     <th class="wd-20p border-bottom-0">عملیات</th>
                                 </tr>
                                 </thead>
@@ -41,6 +42,7 @@
                                     <tr>
                                         <td>{{ $item->title }}</td>
                                         <td>{{ $item->sub_title }}</td>
+                                        <td>@if($item->active) <span class="badge badge-success">فعال</span> @else <span class="badge badge-danger">غیر فعال</span> @endif</td>
                                         <td>
                                             <a href="{{ route('sliders.edit', $item->id) }}" class="btn btn-primary fs-14 text-white edit-icn" title="ویرایش">
                                                 <i class="fe fe-edit"></i>

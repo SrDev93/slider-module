@@ -19,6 +19,7 @@ class CreateSlidersTable extends Migration
             $table->string('sub_title')->nullable();
             $table->string('background')->nullable();
             $table->string('image')->nullable();
+            $table->tinyInteger('active')->default(1);
             $table->timestamps();
         });
     }

@@ -41,6 +41,7 @@ class SlidersController extends Controller
             $slider = Slider::create([
                 'title' => $request->title,
                 'sub_title' => $request->sub_title,
+                'active' => $request->active,
                 'background' => (isset($request->background)?file_store($request->background, 'assets/uploads/sliders/background/','photo_'):null),
                 'image' => (isset($request->image)?file_store($request->image, 'assets/uploads/sliders/images/','photo_'):null)
             ]);
@@ -82,6 +83,7 @@ class SlidersController extends Controller
         try {
             $slider->title = $request->title;
             $slider->sub_title = $request->sub_title;
+            $slider->active = $request->active;
 
             if (isset($request->background)){
                 if ($slider->background){
