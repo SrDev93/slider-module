@@ -12,6 +12,6 @@
 */
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('')->group(function() {
+Route::prefix('panel')->middleware('auth')->group(function() {
     Route::resource('sliders','SlidersController');
 });
